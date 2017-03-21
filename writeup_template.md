@@ -59,11 +59,10 @@ Here is an exploratory visualization of the data set. It is a histogram that sho
 
 ####1. Describe how, and identify where in your code, you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
 
-The code for this step is contained in the fourth code cell of the IPython notebook.
-
-As a first step, I decided to convert the images to grayscale because ...
-
+The code for this step is contained in the fifth, sixth, and seventh code cell of the IPython notebook.
+As a first step, I decided to convert the images to grayscale because …
 Here is an example of a traffic sign image before and after grayscaling.
+
 
 ![alt text][image2]
 
@@ -116,22 +115,18 @@ To train the model, I used an ....
 
 The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
 
+My final model results were: * training set accuracy of ? * validation set accuracy of ? * test set accuracy of ?
+
+If an iterative approach was chosen: * What was the first architecture that was tried and why was it chosen? * What were some problems with the initial architecture? * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting. * Which parameters were tuned? How were they adjusted and why? * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
+I tried many different architectures and evaluated their performance; this includes combinations of different number of convolutional layers and fully connected layers. My first architecture included two convolutional layers, two fully connected layers, and an output layer.
+
+If a well known architecture was chosen: * What architecture was chosen? * Why did you believe it would be relevant to the traffic sign application? * How does the final model’s accuracy on the training, validation and test set provide evidence that the model is working well?
+
 My final model results were:
 * training set accuracy of ?
 * validation set accuracy of ? 
 * test set accuracy of ?
-
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
  
 
 ###Test a Model on New Images
