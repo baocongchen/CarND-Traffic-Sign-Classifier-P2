@@ -92,7 +92,7 @@ I tried many different architectures and evaluated their performances; this incl
 
 Here are ten German traffic signs that I found on the web:
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/test_signs.png "German Traffic Signs from The Web")</div>
+![](./traffic-signs-data/test_signs.png "German Traffic Signs from The Web")
 
 The second image "Speed Limit (70km/h)", the eighth image "Wild animal crossing",  and the nineth image may be difficult to classify: two of them are small and the other has 2 signs which is confusing.
 
@@ -113,7 +113,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 2 of the 10 traffic signs, which gives an accuracy of 20%. The result indicates that the model can not generalize to a wide range of traffic sign data which include mutiple signs in an image, signs with words, signs that are small...etc  
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/30km.png)</div>
+![](./traffic-signs-data/30km.png)
 
 For the first image, the model is absolutely sure that this is a "Speed limit (30km/h)" sign (probability of 1.0), and the image does contain a "Speed limit (30km/h)" sign. The top soft max probabilities was
 
@@ -121,7 +121,7 @@ For the first image, the model is absolutely sure that this is a "Speed limit (3
 |:---------------------:|:---------------------------------------------:| 
 | 100%        			    |    			Speed limit (30km/h)						      | 
  
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/70km.png)</div>
+![](./traffic-signs-data/70km.png)
 
 For the second image, the model failed to classify the right traffic sign. The traffic sign Speed limit (70km/h) is very different from No entry sign; however, the model is very sure that the image contains No entry sign. The size of the traffic sign is small when compared to the total size of the image, thus leads to the error.
 
@@ -133,7 +133,7 @@ For the second image, the model failed to classify the right traffic sign. The t
 |   	2.158341%      		|   	Priority road 				 				            |
 |   	0.367777%			    |    Yield   							                      |
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/generalcaution.png)</div>
+![](./traffic-signs-data/generalcaution.png)
 
 For the third image, the traffic sign is correctly classified as 
 General caution
@@ -142,7 +142,7 @@ General caution
 |:---------------------:|:---------------------------------------------:| 
 |     100.0% 		        |    		General caution							| 
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/pedestrian.png)</div>
+![](./traffic-signs-data/pedestrian.png)
 
 For the fourth image, the model failed to classify the image. There seems to be nothing in common between "General caution" and "Pedestrian" signs. 
 
@@ -153,7 +153,7 @@ For the fourth image, the model failed to classify the image. There seems to be 
 |   0.001441% 		      | 	Speed limit (80km/h)									|
 |   2.6e-05%     			  |   Speed limit (70km/h)					 				|
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/stop.png)</div>
+![](./traffic-signs-data/stop.png)
 
 For the fifth image, the Stop sign was classified incorrectly as Speed limit (80km/h). Again, there's almost nothing in common between the two signs.  
 
@@ -165,7 +165,7 @@ For the fifth image, the Stop sign was classified incorrectly as Speed limit (80
 |  1.8e-05%  	      		|   Speed limit (50km/h) 					 				|
 |  5e-06%  				      |  Stop     							|
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/childrencrossing.png)</div>
+![](./traffic-signs-data/childrencrossing.png)
 
 For the sixth image, the sign children crossing is classified as road work. The two sign both have the same shape and include human.
 
@@ -177,7 +177,7 @@ For the sixth image, the sign children crossing is classified as road work. The 
 |   0.021288%      			|   		Speed limit (80km/h) 	 			 				|
 |   0.00374% 			      |       Right-of-way at the next intersection		|
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/roadnarrowright.png)</div>
+![](./traffic-signs-data/roadnarrowright.png)
 
 For the seventh image, the sign is classified correctly. The model does very well for this traffic sign. We see that the size of the traffic sign is alwost the same as the size of the image, thus makes it easy for the model to classfy it correctly. 
 
@@ -185,7 +185,7 @@ For the seventh image, the sign is classified correctly. The model does very wel
 |:---------------------:|:---------------------------------------------:| 
 |    100.0%        			|    	Road narrows on the right								| 
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/wildanimal.png)</div>
+![](./traffic-signs-data/wildanimal.png)
 
 For the eighth image, the sign Wild animal crossing is small. Again, the model finds it hard to classify image of this size. 
 
@@ -195,7 +195,7 @@ For the eighth image, the sign Wild animal crossing is small. Again, the model f
 |    0.000264%  				| 	  Keep right									|
 |    3e-06%  	      		|   	End of all speed and passing limits			|
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/priorityroad.png)</div>
+![](./traffic-signs-data/priorityroad.png)
 
 For the nineth image, two traffic signs are stacked together. The model failed to classify the image. We need to split image like this into different parts so as to make it easy to classify the image 
 
@@ -207,7 +207,7 @@ For the nineth image, two traffic signs are stacked together. The model failed t
 |  0.619303%  	      	|   Bumpy road  					 				|
 |  0.443438%   				  |   Turn left ahead      							|
 
-<div style="text-align:center" markdown="1">![](./traffic-signs-data/20km.png)</div>
+![](./traffic-signs-data/20km.png)
 
 For the tenth image, we see the classical error. This happens whenever the proportion of the size of a traffic sign to the size of the image is small. The closer it is to 1 the more easily the model can classify an image. 
 
